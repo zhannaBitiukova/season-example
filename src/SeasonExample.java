@@ -12,32 +12,32 @@ public class SeasonExample {
     Scanner scanner = new Scanner(System.in);
     String month = scanner.nextLine();
 
-    String season_recognized;
+    String seasonRecognized;
 
     switch(month.toLowerCase()) {
       case "december":
       case "january":
       case "february":
-        season_recognized = Season.WINTER.toString();
+        seasonRecognized = Season.WINTER.toString();
         break;
       case "march":
       case "april":
       case "may":
-        season_recognized = Season.SPRING.toString();
+        seasonRecognized = Season.SPRING.toString();
         break;
       case "june":
       case "july":
       case "august":
-        season_recognized = Season.SUMMER.toString();
+        seasonRecognized = Season.SUMMER.toString();
         break;
       case "september":
       case "october":
       case "november":
-        season_recognized = Season.AUTUMN.toString();
+        seasonRecognized = Season.AUTUMN.toString();
         break;
       default:
-        season_recognized = "wrong";
+        seasonRecognized = "wrong";
     }
-    System.out.println("This is a " + season_recognized + " month.");
+    System.out.println("This is a " + seasonRecognized + " month.");
   }
 }
